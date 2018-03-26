@@ -1,0 +1,13 @@
+#ErrorDocument 404 "/website/general/general/404_fehlers_104/de/de_404_fehlers_articl_1.php"
+ErrorDocument 404 /website/general/general/404_fehlers_104/de/de_404_fehlers_articl_1.php
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$ /website/general/startseite/startseite_527/de/de_startseite_articl_1.php   [L]
+RewriteRule ^images/(.*) /website/general/startseite/startseite_527/de/images/$1 [L]
+
+RewriteRule ^kompetenzen /website/bachelor/general/kompetenzen_514/de/de_kompetenzen_univer_1.php
+RewriteRule ^bachelor/wpf /website/bachelor/wpf_over/wahlpflicht_421/de/de_wahlpflicht_univer_1.php [R]
+RewriteRule ^master/wpf /website/master/wpf_over/wahlpflicht_425/de/de_wahlpflicht_univer_1.php [R]
+RewriteRule ^die-besten-projekte /website/mi_am_campu/die_besten/die_besten_522/de/de_die_besten_univer_1.php [R]
+RewriteRule ^rtl-preis website/mi_am_campu/events/cbc_preis_2_478/de/de_cbc_preis_2_univer_1.php [R]

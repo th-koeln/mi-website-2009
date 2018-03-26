@@ -1,0 +1,43 @@
+<?php
+
+require_once 'lastRSS.php';
+
+$url = 'http://www.kstw.de/KStW/RSS/rssSPP.php?id=25';
+
+$rss = new lastRSS;
+
+$rss->cache_dir = '/tmp';
+$rss->cache_time = 3600; 
+
+$feed = $rss->Get($url);
+
+
+foreach ($feed['items'] as $item ) {
+	$desc  = htmlspecialchars_decode($item[description]);
+	
+	$desc = preg_replace("=bgcolor.*?>=",">", $desc);
+	$desc = preg_replace("=<font.*?>=","", $desc);
+	$desc = preg_replace("=</font.*?>=","", $desc);
+	$desc = preg_replace("=<sup.*?sup>=","", $desc);
+	$desc = preg_replace("=<a.*?/ul>=","", $desc);
+	$desc = preg_replace("=border.*? =","", $desc);
+	$desc = preg_replace("=Studierende=","Stud.", $desc);
+	$desc = preg_replace("=Mitarbeiter=","MA", $desc);
+	$desc = preg_replace("=width.*? =","", $desc);
+	$desc = preg_replace("=<th colspan.*?th>=","<th class=\"gericht\"><h2 class=\"balkenblau\">Heute in der Mensa</h2></th><th class=\"name\">&nbsp;</th>", $desc);
+	
+	$desc = preg_replace("/valign=.top./","class=\"art\"", $desc);
+	$desc = preg_replace("/align=.right./","class=\"preis\"", $desc);
+	
+	if(preg_match("=keine Angebote=", $desc)){
+		$desc = preg_replace("=Stud.=","", $desc);
+		$desc = preg_replace("=MA=","", $desc);
+		$desc = preg_replace("=G.*?ste=","", $desc);
+		$desc = preg_replace("=<p.*?p>=","", $desc);
+	}
+	
+	if($desc){ echo "<div class=\"mensaplan\">$desc</div>"; }
+	else{ echo "FŸr heute ist leider kein Speiseplan verfŸgbar."; }
+}
+
+?>

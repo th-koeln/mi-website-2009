@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<sparql a="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="nachricht"/>
+    <variable name="datum"/>
+    <variable name="bezug"/>
+    <variable name="autor"/>
+  </head>
+  <results ordered="false" distinct="false">
+    <result>
+      <binding name="nachricht"><literal>InformatikForum mit Achim Berg und Matthias Jarke am 29. April 2009 ab 14:00 Uhr in 1.400N (Opitz-Saal) in Gummersbach; http://www.gm.fh-koeln.de/InformatikForum</literal></binding>
+      <binding name="datum"><literal>2009-04-23T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/SS09</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Mario_Winter</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Ab sofort beginnt die Veranstaltung EMQ donnerstags um 8:30 Uhr.</literal></binding>
+      <binding name="datum"><literal>2009-04-23T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/SS09</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Mario_Winter</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Ab sofort beginnt die Veranstaltung EMQ donnerstags um 8:30 Uhr.</literal></binding>
+      <binding name="datum"><literal>2009-04-23T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Master</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Mario_Winter</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Die in der vergangenen Woche avisierte Vorlesung in der kommenden Woche (1.4) muss leider verschoben werden. Sie findet nun am 22.4.09 10:15 statt.
+
+Das gemeinsame Basis Reading Assignment wird bis spätestens Dienstag im Wiki bereit stehen.</literal></binding>
+      <binding name="datum"><literal>2009-03-26T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Master</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kristian_Fischer</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Die in der vergangenen Woche avisierte Vorlesung in der kommenden Woche (1.4) muss leider verschoben werden. Sie findet nun am 22.4.09 10:15 statt.
+
+Das gemeinsame Basis Reading Assignment wird bis spätestens Dienstag im Wiki bereit stehen.</literal></binding>
+      <binding name="datum"><literal>2009-03-26T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Medien_und_Gesellschaft-3ASS09</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kristian_Fischer</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Alle Studenten, die im MMA Workshop ihr eigenes System nutzen, finden auf der Wiki Seite zum Workshop eine Liste der benötigten Software</literal></binding>
+      <binding name="datum"><literal>2009-04-29T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Multimediaanwendungen-3AWorkshop-3ASS09</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Andreas_Lehmann</uri></binding>
+    </result>
+    <result>
+      <binding name="nachricht"><literal>Am 4.5 ab 12 Uhr findet im Mi-Pool der zweite Teil des Seminars zum Praxisprojekt statt. Themen werden dieses mal das wissenschftliche Arbeiten und vor allem das wissenschaftliche Schreiben sein.</literal></binding>
+      <binding name="datum"><literal>2009-04-26T00:00:00</literal></binding>
+      <binding name="bezug"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Praxisprojekt-3ASS09</uri></binding>
+      <binding name="autor"><uri>http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Stephan_Pavlovic</uri></binding>
+    </result>
+  </results>
+
+</sparql>

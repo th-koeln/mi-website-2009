@@ -1,0 +1,13 @@
+<?php
+  echo '<pre>';
+  
+  // Gibt das gesamte Ergebnis des Shellkommandos "ls" aus und hält als
+  // Rückgabewert die letzte Zeile dieser Ausgabe in $last_line. Der
+  // Rückgabewert des Shellkommandos wird in $retval gespeichert.
+  $last_line = exec('sleep 3 &');//system('sleep 3 &', $retval);
+  $lastline = `sleep 3 &`;
+  // Ausgeben zusätzlicher Informationen
+  echo '</pre>
+       <hr />Letzte Zeile der Ausgabe: ' . $last_line . '
+       <hr />Ruecgabewert: ' . $retval;
+?>

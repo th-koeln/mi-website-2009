@@ -1,0 +1,826 @@
+/* 
+css fuer den Studiengang Medieninformatik
+2008. Christian Noss, christian.noss@fh-koeln.de
+*/
+
+body {
+	margin:0;
+	padding:0;
+	background: #fff;
+	/*background: url("/struktur/images/bg_fh_raster.gif");*/
+	background-repeat: no-repeat;
+}
+
+*{
+
+	font-family: "myriad-pro",Geneva, Arial, Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color:#000;
+	line-height:15px;
+	margin: 0;
+	padding: 0;
+}
+
+img{ border: none; }
+
+#wrap{
+	width: 764px;
+	position: absolute;
+	z-index: 2;
+}
+
+#content{
+	width: 720px;
+	margin-left: 52px;
+	margin-top: 12px;
+}
+
+#map{
+	height: 320px;
+	margin-top: -14px;
+}
+
+.kontaktfooter{	
+	width: 720px;
+}
+
+.clear, span.clear{
+	display: block;
+	clear: both;
+}
+
+.right{
+	display: block;
+	float: right;
+	padding-right: 4px;
+}
+
+#flash{
+	overflow: hidden;
+}
+
+.zeile{
+	clear: both;	
+	padding-bottom: 16px;
+}
+
+.extrazeile{
+	margin-bottom: 16px;
+}
+
+/*div.zeile + div.zeile{
+	border-top: solid 1px #b4a7a0;
+}*/
+
+.float{
+	float: left;
+	display: block;
+	
+}
+
+.block{
+	display: block;
+}
+
+.einfach{
+	width: 172px;
+	margin-right: 8px;
+}
+
+
+.h1block h1{
+	display: block;
+	float: none;
+}
+
+.halb{
+	width: 86px;
+	margin-right: 8px;
+}
+
+.zweifach{
+	width: 352px;
+	margin-right: 8px;
+}
+
+.zweifach p{
+	padding-right: 8px;
+}
+
+
+.relativ{
+	position: relative;
+}
+
+.abstand_einfach{
+	margin-right: 180px;
+}
+
+
+.abstand_einfach_links{
+	margin-left: 180px;
+}
+
+.abstand_zweifach_links{
+	margin-left: 360px;
+}
+
+.dreifach{
+	width: 526px;
+	margin-right: 8px;
+}
+
+.vierfach{
+	width: 714px;
+	margin-right: 8px;
+}
+
+.indexDreifach{
+	width: 560px;
+}
+
+.last{
+	margin-right: 0;
+}
+
+a {
+	color: #000;	
+	border-bottom: dotted 1px #d16;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	border-bottom: dotted 1px #d16;
+}
+
+
+a:hover{
+	color: #75bf0d;
+}
+
+
+
+input, textarea 
+{
+	background: #F3F6ED;
+	border: #75bf0d 1px solid;
+	margin: 0;
+	padding: 2px;
+	font-size: 11px;
+}
+
+
+/* Fonts und Co.
+-------------------------------------------------- */
+
+[class~=artike*] h3{
+	display: block;
+	margin-bottom: 4px;
+}
+
+h1, h2,h3,h4,h5,h6{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+h1{
+	background: #d16;
+	color: #fff !important;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	float: left;
+	letter-spacing: 1px;
+
+}
+
+
+h2.balkengruen, span.balkengruen, h2.balkenblau, span.balkenblau{
+	background: #77cc00;
+	color: #fff !important;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 2px;
+	padding-left: 5px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+h2.balkengruen a, h2.balkengrau a{
+	color: #d16;
+}
+
+h2.balkenblau, span.balkenblau{
+	background: #77aabb;
+}
+
+h2.balkengrau, span.balkengrau{
+	background: #442211;
+	color: #fff !important;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 2px;
+	padding-left: 5px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+h1.myriad{
+	position: absolute;
+	background: none;
+	padding: 0;
+	left: 0;
+	top: 20px;
+}
+
+h2, h2 strong{
+	color: #77cc00;
+}
+
+.bu .myriad{
+	font-weight: 400;
+	font-size: 18px;
+	padding: 8px;
+}
+
+p{
+	padding-bottom: 15px;
+}
+
+dl.bild{
+	float: left;
+}
+
+.marginalie p{
+	padding: 0;
+	color: #555;
+}
+
+.rechts{
+	text-align: right;
+}
+
+.rahmen_einfach{
+	border: solid 1px #d18;
+	padding: 8px;
+	width: 150px;
+	margin-right: 8px;
+}
+
+
+/* linien
+-------------------------------------------------- */
+.linieoben_pink{ border-top: solid 1px #d16; }
+.linieoben_braun{ border-top: solid 1px #b4a7a0; }
+
+.linieoben_pink, .linieoben_braun{
+	padding-top: 4px;
+	margin-top: 8px;
+}
+
+.linieunten_pink{
+	border-bottom: solid 1px #d16;
+}
+
+.linieunten_blau{
+	border-bottom: solid 1px #77aabb;
+}
+
+.linieunten_braun{
+	border-bottom: solid 1px #b4a7a0;
+}
+
+
+
+/* Hinergruende
+-------------------------------------------------- */
+.bg_braun{ background: #f2ebe6; }
+.bg_gruen{ background: #e4f5cc; }
+
+/* Indexe
+-------------------------------------------------- */
+.index_mensch{
+	width: 172px;
+	height: 172px;
+	margin-right: 8px;
+	float: left;
+}
+
+#indexseite .index_veranstaltung{
+	width: 164px;
+	height: 164px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	padding: 4px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+#indexseite .vierzig_prozent{ background:#b4a7a0 !important; }
+#indexseite .sechzig_prozent{ background:#77cc00; }
+#indexseite .achtzig_prozent{ background:#694e41; }
+#indexseite .blau{ background:#77aabb; }
+
+#indexseite .index_veranstaltung *{
+	color: #fff;
+}
+
+#indexseite .index_veranstaltung p a{
+	border-bottom: dotted 1px #fff;
+}
+
+#indexseite .index_veranstaltung p a:hover{
+	border-bottom: solid 1px #dd1166;
+}
+
+#indexseite h2.index, .box_rahmen{
+	width: 162px;
+	height: 162px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: solid 1px #dd1166;
+	padding: 4px;
+	display: block;
+}
+
+#indexseite .index_veranstaltung a.mehr{
+	display: block;
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+	color: #dd1166;
+	border: none;
+	padding-right: 4px;
+}
+
+#indexseite .index_veranstaltung h2{
+	font-weight: bold;
+}
+
+/* Startseite
+-------------------------------------------------- */
+
+#startbild .bu{
+	position: absolute;
+	left: 360px;
+	bottom: 2px;
+	filter:alpha(opacity=80); 
+	-moz-opacity:0.8;
+	opacity:0.8;
+	background: #77cc00;
+}
+
+#startbild .bu a:hover{ color: #000; }
+
+
+.myriadklein{
+	padding: 4px;
+	padding-bottom: 8px;
+
+}
+
+.linkbox{
+	border: solid 1px #77cc00; 
+	width: 340px;
+	height: 90px;
+	padding: 5px;
+	text-align: right;
+}
+
+.linkbox *{
+	margin-top: 74px;
+	color: #77cc00 !important;
+}
+
+.linkbox:hover{border: solid 1px #d16;  }
+.linkbox *:hover{color: #d16 !important;  }
+
+.startseitenlinks img{
+	display: none;
+}
+
+
+.startseitenlinks{
+	border-top: solid 1px #77cc00;
+	width: 284px;
+	clear: both;
+	padding-right: 60px;
+}
+
+.achtung{
+	border-top: solid 1px #d16;
+	padding-left: 360px;
+	padding-top: 16px;
+	border-bottom: solid 1px #d16;
+}
+
+.startseitenlinks{
+/*	background-image: url("/struktur/images/mi_weiter_w.gif");
+	background-position: top right;
+	background-repeat: no-repeat; */
+}
+
+.startseitenlinks p{
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-right: 20px;
+}
+
+.startseitenlinks:hover{
+	background: #f2ebe6;
+}
+
+.startseitenlinks a:visited{
+	border: none;
+	color: #d16;
+}
+
+.startseitenlinks a{
+	border: none;
+	color: #d16;
+}
+
+/*.startseitenlinks *{
+	color: #fff !important;
+}*/
+
+/* Navigation
+-------------------------------------------------- */
+#nav_wrap{
+	margin-left: 52px; width: 780px; overflow: hidden; }
+	
+#nav_wrap ul{
+	float: left; width: 170px; margin-right: 10px; }
+	
+#nav_wrap ul li{
+	display: block; 
+	background: none;
+	padding: 0;
+}
+
+#nav_wrap a{
+	display: block;
+	border: none;
+}
+
+#nav_wrap a:hover{
+	background: #d16;
+	color: #fff !important;
+	padding-left: 2px;
+	border: none;
+}
+
+#nav_wrap a:visited{
+	border: none;
+}
+
+#nav_wrap *{
+	color: #d16; }
+
+/* Listen
+-------------------------------------------------- */
+
+li{
+	list-style-type: none;
+	padding-left: 12px;
+	background-image: url("/struktur/images/list.gif");
+	background-repeat: no-repeat;
+	padding-top: 3px;
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+}
+
+.zeile ul{
+	margin-bottom: 18px;
+}
+
+.zeile p + ul{
+	margin-top: -6px;
+}
+
+/* besondere Elemente
+-------------------------------------------------- */
+
+.pdf{
+	background-image:url("/struktur/images/pdf.gif");
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	padding-bottom: 8px;
+	border: none;
+	display: block;
+	margin-top: 4px;
+}
+
+a.pdf:hover{
+	border: none;
+	background: none;
+	background-image:url("/struktur/images/pdf.gif");
+	background-repeat: no-repeat;
+	color: #000;
+}
+
+
+a.pdf:visited{
+	border: none;
+}
+
+
+/* DevZONE
+-------------------------------------------------- */
+
+#raster{
+	background-image: url("/struktur/images/bg_fh_repeat.gif");
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 1;
+	display: none;
+}
+
+#copy a{
+
+}
+
+
+
+
+/* Personen
+-------------------------------------------------- */
+
+table.personen td {
+	vertical-align: top;
+}
+
+td.person_hl{
+	padding-right: 8px;
+	padding-bottom: 4px;
+}
+
+/* wiki
+-------------------------------------------------- */
+
+.wiki div{
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+
+.wiki div + div{
+	border-top: solid 1px #b4a7a0;
+}
+
+.wiki div .author, .wiki div .datum, .wiki div .bezug, /* News */
+.wiki .art, .wiki .studiengang, .wiki .ansprechpartner/* Projekte */
+{
+	display: inline;
+	padding-right: 0;
+}
+
+.wiki h3 a{ 
+	font-weight: bold; 
+}
+
+.wiki .datum:after{
+	content: " - ";
+}
+
+.wiki div .nachricht, .wiki div .zusammenfassung{
+	padding-bottom: 4px;
+}
+
+.wiki div .ansprechpartner{
+	padding-bottom: 0;
+}
+
+.wiki div .titel{
+	text-transform: uppercase;
+	color: #77cc00;
+	display: inline;
+}
+
+.wiki div .vorschlag{
+	padding-bottom: 4px;
+
+}
+
+/* Mensaplan
+-------------------------------------------------- */
+.mensaplan{
+	margin-bottom: 16px;
+}
+
+.mensaplan td{
+	border-top: solid 1px #b4a7a0;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+
+.mensaplan th, .mensaplan td{
+	text-align: left;
+}
+
+.mensaplan th.gericht{ width: 360px; padding-left: 0; text-align: left;}
+.mensaplan th.name, .mensaplan td.art{ width: 180px; padding-right: 0;}
+.mensaplan td.preis{ width: 60px; padding-right: 0;}
+
+.mensaplan td{
+	width: 360px;
+	vertical-align: top;
+	padding-right: 20px;
+}
+
+
+.mensaplan p{
+	color: #b4a7a0;
+	margin-top: 4px;
+}
+
+/* Startnews
+-------------------------------------------------- */
+
+p.startnews{
+	position: relative;
+}
+
+
+p.startnews a, p.startnews a:visited{
+	border: none;
+}
+
+p.startnews img{
+	border: solid 1px #b4a7a0;
+}
+
+p.startnews strong{
+	display: block;
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+	margin: 1px;
+	background: #fff;
+	color: #77cc00;
+	padding: 2px;
+	font-weight: normal;
+	padding-right: 5px;
+}
+
+p.startnews a{
+	display: block;
+	position: relative;
+}
+
+
+/* Termine
+-------------------------------------------------- */
+.termine{ 
+	padding-top: 4px;
+	padding-bottom: 4px;
+	position: relative;
+}
+
+.termine + .termine{
+	border-top: solid 1px #e4f5cc;
+}
+
+.termine .datum, .termine .beschreibung{
+	display: block;
+	float: left;
+	width: 168px;
+}
+
+.termine .datum{
+	text-transform: uppercase;
+	color: #77cc00;
+	margin-right: 8px;
+}
+
+img.weiter{
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+
+#footer {
+	padding: 2px 0;
+	clear: both;
+	color: #999;
+	border-top: solid 3px #77cc00;	
+	margin-left: 52px;
+	padding-bottom: 16px;
+	width: 720px;
+}
+
+#footer a {
+	border:none;
+}
+
+#footer li{
+	background-image: none;
+	padding: 0;
+	padding-right: 20px;
+	padding-bottom: 4px;
+
+}
+
+#footer li a{
+	color: #bbb;
+
+}
+
+#footer:hover li a{
+	color: #75bf0d;
+}
+
+#footer:hover li a:hover{
+	color: #d16;
+}
+
+#footer p#copy{
+	padding-bottom: 16px;
+}
+
+/* #footer li + li{ background: #f2ebe6; }
+#footer li + li + li{ background: #fff;}
+#footer li + li + li + li{background: #f2ebe6;}
+#footer li + li + li + li +li{ background: #fff;}
+#footer li + li + li + li +li +li{ background: #f2ebe6; }
+#footer li + li + li + li +li +li + li{ background: #fff;}
+#footer li + li + li + li +li +li + li +li{ background: #f2ebe6; } */
+
+/* Themenvorschlaege
+-------------------------------------------------- */
+
+div.themen{}
+
+div#themen div{
+	float: left;
+	width: 172px;
+	/*height: 200px;*/
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+/*div#themen div + div{
+	border-left: solid 1px #f2ebe6;
+	padding-left: 8px;
+	width: 162px;
+}*/
+
+div#themen .titel{
+	font-weight: bold; 
+}
+
+div#themen .titel, 
+div#themen .ansprechpartner,
+div#themen .art,
+div#themen .studiengang{
+	display: inline;
+	padding-right: 2px;
+}
+
+div#themen p.vorschlag{
+	padding-bottom: 2px;
+}
+
+div#themen > p{
+	/* border-top: solid 1px #f2ebe6; */
+	clear: both;
+	text-align: right;
+	padding-bottom: 4px;
+}
+
+/* Slideshow
+-------------------------------------------------- */
+
+.slideshow{
+	display: block;
+	border: solid 1px #f2ebe6;
+	height: 380px;
+	width: 540px;
+	background: #ffffff;
+}
+
+.slideshow_gross{
+	display: block;
+	border: solid 1px #f2ebe6;
+	height: 540px;
+	width: 720px;
+	background: #ffffff;
+}

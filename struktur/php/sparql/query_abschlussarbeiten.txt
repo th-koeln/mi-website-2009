@@ -1,0 +1,12 @@
+"Select distinct ?titel ?autor ?betreuer ?jahr ?zusammenfassung ?pdf where
+{ ?x a <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kategorie-3AAbschlussarbeit>.
+  ?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AIstSichtbar> true.
+  ?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatTitel>
+  ?titel. ?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatMitglied>
+  ?autorX. ?autorX <http://www.w3.org/2000/01/rdf-schema#label> ?autor.
+  ?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AWirdBetreutVon> ?betreuerX.
+  ?betreuerX <http://www.w3.org/2000/01/rdf-schema#label> ?betreuer.
+  OPTIONAL {?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatJahr> ?jahr}
+  OPTIONAL {?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatUri> ?pdf}
+  OPTIONAL {?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatZusammenfassung> ?zusammenfassung}
+}"

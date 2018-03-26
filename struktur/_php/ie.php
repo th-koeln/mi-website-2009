@@ -1,0 +1,26 @@
+<!--[if IE]>
+
+<script language="VBScript" type="text/vbscript">
+Dim VBaktiv
+VBaktiv= 1
+
+Function VBGetSwfVer(i)
+  on error resume next
+  Dim swControl, swVersion
+  swVersion = 0
+  
+  set swControl = CreateObject("ShockwaveFlash.ShockwaveFlash." + CStr(i))
+  if (IsObject(swControl)) then
+    swVersion = swControl.GetVariable("")
+  end if
+  VBGetSwfVer = swVersion
+End Function
+
+</script>
+
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="../../../../../struktur/js/pngfix.js"></script>
+
+<![endif]-->

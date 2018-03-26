@@ -1,0 +1,5 @@
+<FilesMatch "trigger_wiki.php">
+	order deny,allow 
+	allow from 139.6.56.23
+	deny from all
+</FilesMatch>

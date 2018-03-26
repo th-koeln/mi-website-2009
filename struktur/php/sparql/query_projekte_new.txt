@@ -1,0 +1,20 @@
+ ?titel ?mitglied ?betreuer ?zusammenfassung ?bezug 
+ 
+  ?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AIstSichtbar> true.
+  
+  
+?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AWirdBetreutVon> ?betreuerX. 
+?betreuerX <http://www.w3.org/2000/01/rdf-schema#label> ?betreuer.
+
+
+"Select distinct ?titel ?mitglied ?zusammenfassung ?bezug where{
+{?x a <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kategorie-3AForschungsprojekt>}
+UNION{?x a <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kategorie-3ALehrprojekt>}
+UNION{?x a <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Kategorie-3ASeminararbeit>} ?x a ?typ.
+?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatTitel> ?titel.
+?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatMitglied>
+?mitgliedX. ?autorX <http://www.w3.org/2000/01/rdf-schema#label> ?mitglied. 
+OPTIONAL {?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3AHatZusammenfassung> ?zusammenfassung}
+OPTIONAL {?x <http://www.medieninformatik.fh-koeln.de/miwiki/Spezial:URIResolver/Attribut-3ABeziehtSichAuf> ?bezugX. 
+?bezugX <http://www.w3.org/2000/01/rdf-schema#label> ?bezug}
+}"
